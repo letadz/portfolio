@@ -1,0 +1,28 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Learning bootstrap with sass to my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5.2",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Mark Angelo Letada",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.3"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "autoprefixer": "^10.4.8",
+    "bootstrap": "^5.2.0",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+.navbar-nav {
+    height: 10vh;
+
+    .nav-link {
+        font-size: $text-sm;
+        font-weight: 400;
+        color: $black;
+    
+        &:hover {
+            color: $red;
+        }
+    }
+
+    .btn-outline {
+        font-size: $text-sm;
+        font-weight: 400;
+        width: 100%;
+        color: $light;
+        border: 1px solid $black;
+        background-color: $black;
+        transition: ease-out 0.3s;
+
+        &:hover {
+            background-color: $red;
+            border: 1px solid $red;
+            cursor: pointer;
+        }
+    }
+}
+
+
+

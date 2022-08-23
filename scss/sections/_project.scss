@@ -1,0 +1,85 @@
+.project-section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 1rem;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .card-project {
+        max-width: 20rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .uil-github {
+        display: inline-block;
+        font-size: 1.5rem;
+        line-height: 44px;
+        color: #000;
+        background-color: $light;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+
+        &:focus,
+        &:hover {
+          color: $light;
+          background-color: $black;
+        }
+      }
+}
+
+@media (max-width: 1024px) {
+  .project-section {
+    height: auto;
+    
+    .project-list {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 1rem;
+    }
+    .card-project {
+      width: 17rem;
+  }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    .project-list {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 1rem;
+    }
+    .card-project {
+      width: 17rem;
+  }
+  }
+}
+
+@media (max-width: 450px) {
+  .project-section {
+
+    .project-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card-project {
+      width: 15rem;
+
+      &:last-child {
+        padding-bottom: 1rem;
+      }
+  }
+  }
+}

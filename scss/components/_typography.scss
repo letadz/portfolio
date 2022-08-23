@@ -1,0 +1,97 @@
+// Hero-section
+.text-top {
+    font-size: $text-md;
+    color: $gray;
+}
+
+.text-middle {
+    font-size: $text-xxl;
+    font-weight: 900;
+}
+
+.text-bottom {
+    font-size: $text-sm;
+    color: $red;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .text-top {
+        font-size: 1.5rem;
+        color: $gray;
+    }
+    
+    .text-middle {
+        font-size: $text-xl;
+        font-weight: 900;
+    }
+    
+    .text-bottom {
+        font-size: $text-sm;
+        color: $red;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-middle {
+        font-size: $text-xl;
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+
+// About section
+.about-content {
+    p {
+        color: $gray;
+        font-size: $text-sm;
+    }
+}
+
+.about-title {
+    font-family: $font-sans;
+    font-size: $text-xl;
+    font-weight: 700;
+    color: $black;
+}
+
+//  Skills section
+
+.title {
+    font-size: $text-sm;
+    color: $gray;
+}
+
+// Project
+.project-title h1 {
+    margin: 5rem 0;
+    font-family: $font-sans;
+    font-size: $text-xl;
+    font-weight: 700;
+    color: $black;
+}
+
+//Contact
+.contact-title {
+    font-family: $font-sans;
+    font-size: $text-xxl;
+    font-weight: 700;
+    color: $black;
+}
+
+.contact-description {
+    font-family: $font-mono;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: $secondary;
+    padding: 10px 0;
+    
+}

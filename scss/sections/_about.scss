@@ -1,0 +1,122 @@
+.about-section {
+    height: 100vh;
+    width: 100vw;
+    padding: 5rem 1rem;
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 7rem;
+        width: 100%;
+
+        .about-left {
+            max-width: 25rem;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 5px 6px 22px -2px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 5px 6px 22px -2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 6px 22px -2px rgba(0,0,0,0.75);
+        }
+
+        .about-right {
+            width: 50%;
+        }
+
+        .about-img {
+            max-width: 400px;
+            width: 100%;
+            max-height: 450px;
+            height: 100%;
+            border-radius: 5px;
+            filter: grayscale(1);
+            transition: transform ease 0.3s;
+
+            &:hover {
+                filter: grayscale(0);
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+        filter: grayscale(0%) contrast(1);
+    }
+
+    .profile-pic {
+        max-width: 250px;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(100%) contrast(1);
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .about-section {
+        height: 100%;
+
+
+        .about-content {
+            gap: 3rem;
+            width: 100%;
+
+            .about-left {
+                max-width: 20rem;
+            }
+
+            .about-img {
+                max-width: 350px;
+                max-height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        .about-content {
+            flex-direction: column;
+            gap: 3rem;
+            width: 100%;
+
+            .about-left {
+                max-width: 23rem;
+            }
+
+            .about-img {
+                max-width: 370px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .about-section {
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        .about-content {
+            .about-left {
+                max-width: 21rem;
+            }
+
+            .about-right {
+                width: 80%;
+            }
+
+            .about-img {
+                max-width: 350px;
+            }
+        }
+    }
+}

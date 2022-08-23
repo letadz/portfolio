@@ -1,0 +1,24 @@
+.skills-title {
+    margin-top: 1.5rem;
+}
+
+    .cards {
+        max-width: 40rem;
+        width: 100%;
+        padding-top: 1rem;
+
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .cards > div {
+        background-color: $black;
+        border-radius: 5px;
+        color: $light;
+    }
+
+    .card-img {
+        width: fit-content;
+        height: 0.813rem;
+    }
