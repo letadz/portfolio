@@ -10758,13 +10758,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.btn-resume {
+.hero-title .btn-resume {
   border: 1px solid #0c0c0c;
   transition: ease-out 0.3s;
   max-width: 150px;
   width: 100%;
 }
-.btn-resume:hover {
+.hero-title .btn-resume:hover {
   color: #f8fffe;
   cursor: pointer;
   box-shadow: inset 150px 0 0 0 #d80000;
@@ -10793,13 +10793,14 @@ textarea.form-control-lg {
 
 .text-middle {
   font-size: 5rem;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   font-weight: 900;
 }
 
 .text-bottom {
   font-size: 1rem;
-  color: #d80000;
   font-weight: 500;
+  color: #d80000;
 }
 
 @media (max-width: 1024px) {
@@ -10869,38 +10870,47 @@ textarea.form-control-lg {
   padding: 10px 0;
 }
 
-.navbar-nav {
-  height: 10vh;
+.navbar {
+  margin: 1rem auto;
+  background-color: #f8fffe;
 }
-.navbar-nav .nav-link {
+.navbar .navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1.5rem;
+}
+.navbar .navbar-nav .nav-link {
   font-size: 1rem;
   font-weight: 400;
   color: #0c0c0c;
+  text-decoration: none;
+  transition: 0.2s;
 }
-.navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
   color: #d80000;
 }
-.navbar-nav .btn-outline {
+.navbar .navbar-nav .btn-outline {
   font-size: 1rem;
   font-weight: 400;
   width: 100%;
   color: #f8fffe;
-  border: 1px solid #0c0c0c;
   background-color: #0c0c0c;
   transition: ease-out 0.3s;
 }
-.navbar-nav .btn-outline:hover {
+.navbar .navbar-nav .btn-outline:hover {
   background-color: #d80000;
   border: 1px solid #d80000;
+  color: #f8fffe;
   cursor: pointer;
 }
 
 .hero-section {
   height: 100vh;
   width: 100vw;
-  padding-top: 100px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 9rem 1rem;
 }
 .hero-section .hero-title {
   display: flex;
@@ -10909,10 +10919,13 @@ textarea.form-control-lg {
   align-items: center;
   width: auto;
 }
-.hero-section .btn-resume .uil-arrow-right {
+.hero-section .btn-resume i {
   margin-left: 0.3rem;
   font-size: 1.2rem;
-  transition: 0.3s;
+  transition: transform 0.3s ease-in;
+}
+.hero-section .btn-resume i:hover {
+  transform: translateX(5px);
 }
 .hero-section .container-profile {
   height: 500px;
@@ -10928,8 +10941,8 @@ textarea.form-control-lg {
   position: absolute;
   height: 400px;
   width: 400px;
-  bottom: 1.5rem;
-  right: 4rem;
+  bottom: 0.7rem;
+  right: 5rem;
   border: 2px solid #737575;
   border-radius: 5px;
   background-color: transparent;
@@ -11003,22 +11016,12 @@ textarea.form-control-lg {
   .hero-section .container-profile {
     height: 500px;
     width: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
   }
   .hero-section .container-profile::after {
-    content: "";
-    display: block;
-    position: absolute;
     height: 350px;
     width: 350px;
-    bottom: 2.5rem;
-    right: 2rem;
-    border: 2px solid #737575;
-    border-radius: 5px;
-    background-color: transparent;
+    bottom: 2.1rem;
+    right: 1.2rem;
   }
   .hero-section .container-profile .profile-pic {
     max-width: 400px;
@@ -11044,14 +11047,13 @@ textarea.form-control-lg {
     align-items: center;
   }
   .hero-section .container-profile {
-    height: 500px;
     width: 30rem;
   }
   .hero-section .container-profile::after {
     height: 350px;
-    width: 350px;
+    width: 370px;
     top: 3rem;
-    right: 2rem;
+    right: 1rem;
   }
   .hero-section .container-profile .profile-pic {
     max-width: 400px;
@@ -11066,6 +11068,9 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 425px) {
+  .hero-section {
+    padding: 5rem 1rem;
+  }
   .hero-section .container-profile {
     height: 500px;
     width: 30rem;
@@ -11073,7 +11078,7 @@ textarea.form-control-lg {
   .hero-section .container-profile::after {
     height: 270px;
     width: 270px;
-    top: 2.5rem;
+    top: 2.6rem;
     right: 1.3rem;
   }
 }
@@ -11081,16 +11086,16 @@ textarea.form-control-lg {
   .hero-section .container-profile::after {
     height: 240px;
     width: 240px;
-    top: 2.3rem;
-    right: 1.3rem;
+    top: 2.1rem;
+    right: 1rem;
   }
 }
 @media (max-width: 325px) {
   .hero-section .container-profile::after {
     height: 200px;
     width: 200px;
-    top: 1.7rem;
-    right: 1.1rem;
+    top: 1.5rem;
+    right: 1.12rem;
   }
 }
 .about-section {
@@ -11115,10 +11120,7 @@ textarea.form-control-lg {
   -webkit-box-shadow: 5px 6px 22px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 6px 22px -2px rgba(0, 0, 0, 0.75);
 }
-.about-section .about-content .about-right {
-  width: 50%;
-}
-.about-section .about-content .about-img {
+.about-section .about-content .about-left .about-img {
   max-width: 400px;
   width: 100%;
   max-height: 450px;
@@ -11127,9 +11129,12 @@ textarea.form-control-lg {
   filter: grayscale(1);
   transition: transform ease 0.3s;
 }
-.about-section .about-content .about-img:hover {
+.about-section .about-content .about-left .about-img:hover {
   filter: grayscale(0);
   transform: scale(1.05);
+}
+.about-section .about-content .about-right {
+  width: 50%;
 }
 .about-section .wrapper {
   display: block;
@@ -11305,7 +11310,7 @@ textarea.form-control-lg {
 }
 
 .footer-section {
-  height: 10vh;
+  height: auto;
   width: 100vw;
   background-color: #f8fffe;
   color: #0c0c0c;
@@ -11325,6 +11330,21 @@ textarea.form-control-lg {
 html, body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   background-color: #f8fffe;
+}
+
+#scroll-top {
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
 }
 
 /*# sourceMappingURL=style.css.map */

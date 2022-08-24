@@ -6,13 +6,14 @@
 
 .text-middle {
     font-size: $text-xxl;
+    font-family: $font-sans;
     font-weight: 900;
 }
 
 .text-bottom {
     font-size: $text-sm;
-    color: $red;
     font-weight: 500;
+    color: $red;
 }
 
 @media (max-width: 1024px) {
@@ -64,7 +65,6 @@
 }
 
 //  Skills section
-
 .title {
     font-size: $text-sm;
     color: $gray;

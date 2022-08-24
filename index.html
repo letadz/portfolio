@@ -18,12 +18,6 @@
     <link href="http://fonts.cdnfonts.com/css/calibre" rel="stylesheet" />
     <link href="http://fonts.cdnfonts.com/css/sf-mono" rel="stylesheet" />
 
-    <!-- Full page scroll -->
-    <!-- <link rel="stylesheet" type="text/css" href="fullpage.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.css" integrity="sha512-5MGDCtVeXPQtSGLs2lG9mkb1tWc35ZSaBgJca+YMJxOIgLUaopFR28hmwJCk0W2KR8Ydt7vg3E+KS5XwbNFmMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />     -->
-
-    <!-- Animation -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    
     <!-- Title Logo -->
     <link rel="icon" href="./scss/images/logo/512px.png" type="image/icon type" />
     
@@ -31,26 +25,55 @@
   <body>
 
         <!-- Navbar -->
-        <nav id="navbar" class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+              <a class="navbar-brand" href="/"><img src="./scss/images/logo/64px.png" alt="logo"></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex align-items-center ms-auto mb-2 mb-lg-0 gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#project">Project</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="btn btn-outline" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <!-- <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-logo" href="index.html">
             <img src="./scss/images/logo/64px.png" alt="Logo" />
-            </a>
+            </a> -->
 
             <!-- Hamburger Menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
 
             <!-- Navbar item -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex align-items-center ms-auto mb-2 mb-lg-0 gap-3">
                 <li class="nav-item">
                 <a class="nav-link active" href="#about">About</a>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
-                </li> -->
+                </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#project">Project</a>
                 </li>
@@ -60,10 +83,10 @@
             </ul>
             </div>
         </div>
-        </nav>
+        </nav> -->
 
         <!-- Hero Section -->
-        <section class="hero-section section">
+        <section id="home" class="hero-section">
         <div class="container hero-container">
             <!-- design -->
             <!-- <img src="./images/design/pattern-circles.png" class="pattern" alt=""> -->
@@ -73,7 +96,7 @@
                 <div class="hero-text">
                     <p class="text-top">Hi, my name is</p>
                     <h1 class="text-middle">Mark Angelo</h1>
-                    <p class="text-bottom">Front-end Web Developer</p>
+                    <p class="text-bottom">Full-Stack Web Developer</p>
                 
                     <!-- <p>I love build things for the website.</p> -->
                     <a href="https://drive.google.com/file/d/1PLmSK_-bJTaaUGsWotTx6YC2jjDdOuK-/view?usp=sharing" target="_blank" class="btn btn-resume" role="button">Resume 
@@ -122,30 +145,19 @@
                 </div>
             </div>
 
-            <!-- profile pic -->
-            <div class="col container-profile"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out">
-                <img
-                draggable="false"
-                class="profile-pic"
-                src="./scss/images/profile/profile.png"
-                alt="Profile pic"
-                />
-            </div>
+                <!-- profile pic -->
+                <div class="col container-profile">
+                    <img
+                    draggable="false"
+                    class="profile-pic"
+                    src="./scss/images/profile/profile.png"
+                    alt="Profile pic"
+                    />
+                </div>
             </div>
         </div>
         </section>
 
-        <!-- 
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="20"
-        data-aos-duration="1100"
-        data-aos-easing="ease-in-out" -->
         <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
@@ -158,9 +170,9 @@
 
                         <div class="about-right">
                             <p class="about-description">
-                                I'm Mark Angelo Letada, i'm currently looking for an opportunity to show my potential. I prefer to keep learning,
+                                I'm Mark Angelo Letada, I'm currently looking for an opportunity to show my potential. I prefer to keep learning,
                                 continue challenging myself and do interesting things that matter,
-                                i am very passionate about improving my coding skills & developing websites.
+                                I am very passionate about improving my coding skills & developing websites.
                             </p>
         
                             <div class="skills-title">
@@ -211,77 +223,6 @@
             </div>
         </section>
     
-        <!-- <div class="style-pic">
-        <div class="wrapper">
-            <div class="profile">
-                <img
-                src="./images/profile/2x2.JPG"
-                class="profile-pic"
-                alt="Profile Picture"
-                />
-            </div>
-        </div>
-    </div> -->
-    
-        <!-- Skills -->
-        <!-- 
-    data-aos="fade-left"
-</div>
-</div>
-            data-aos-offset="400"
-            data-aos-delay="30"
-            data-aos-duration="1200"
-            data-aos-easing="ease-in-out" -->
-        <!-- <section id="skills" class="skills-section section">
-                <div class="container">
-                    <div class="skills-card">
-                        <div class="skills-title">
-                            <h1 class="title">Here's my tech skills:</h1>
-                        </div>
-                        <div class="cards d-flex flex-wrap gap-3">
-                            <div class="px-2">
-                                <img src="./images/tech-skills/html.png" class="card-img" alt="Html">
-                                <span>HTML</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/css.png" class="card-img" alt="Css">
-                                <span>CSS</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/javascript.png" class="card-img" alt="Html">
-                                <span>Javascript</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/bootstrap.png" class="card-img" alt="Html">
-                                <span>Bootstrap</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/sass.png" class="card-img" alt="Html">
-                                <span>Sass</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/react.png" class="card-img" alt="Html">
-                                <span>Reactjs</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/git.png" class="card-img" alt="Html">
-                                <span>Git</span>
-                            </div>
-    
-                            <div class="px-2">
-                                <img src="./images/tech-skills/photoshop.png" class="card-img" alt="Html">
-                                <span>Photoshop</span>
-                            </div>
-                        </div>
-                    </div>
-            </section> -->
-
         <!-- Project -->
         <!--  
             data-aos="zoom-in"
@@ -343,19 +284,12 @@
         </section>
 
         <!-- CONTACT -->
-        <!-- 
-            data-aos="fade"
-            data-aos-offset="300"
-            data-aos-delay="30"
-            data-aos-duration="1100"
-            data-aos-easing="ease-in-out" -->
-           
         <section id="contact" class="contact-section section">
 
                 <div class="contact-items">
                     <h1 class="contact-title mt-5">Get In Touch</h1>
                     <p class="contact-description">Got a question or proposal, or just want to say hello? Go ahead.</p>
-                    <a href="mailto:letada.mrkngl@gmail.com"><button class="btn btn-outline-dark my-5">Just Send
+                    <a href="mailto:mrkngl.letada@gmail.com"><button class="btn btn-outline-dark my-5">Just Send
                         <i class="uil uil-arrow-right"></i>
                     </button></a>
                 </div>
@@ -365,7 +299,7 @@
         <!-- FOOTER -->
         <div class="footer-section">
             <footer class="container border-top mt-5">
-            <div class="my-5">
+            <div class="my-2">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 </a>
                 <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Letada All Right Reserved</span>
@@ -373,29 +307,9 @@
             </footer>
         </div>
 
+        <!-- SCROLL TOP -->
+        <a href="#" id="scroll-top"><i class="bi bi-arrow-up-circle-fill"></i></a>
 
-
-
-
-    <!-- Scroll Animation -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.js" integrity="sha512-Xaje5GN/tSuxnQNdbOMppDPWWpPMN0WGfay1St6ckxBqnm3hB66iVqBbLXmujadwsH9KOUVHJZ3GR9QpAEF1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        new fullpage('#fullpage', {
-	//options here
-	autoScrolling: true,
-    navigation: true,
-    });
-    
-    </script> -->
-
-    
-    <!-- Animation -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-    </script> -->
-
+        <script src="./assets/css/js/index.js"></script>
   </body>
 </html>
