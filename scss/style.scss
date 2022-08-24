@@ -24,17 +24,3 @@ html, body {
     font-family: $font-mono;
     background-color: $light;
 }
-
-#scroll-top {
-    position: fixed;
-    top: -140%;
-    right: 2rem;
-    padding: 1rem 1.5rem;
-    font-size: 2rem;
-    border-radius: 50%;
-    transition: 1s linear;
-    z-index: 1000;
-  }
-  #scroll-top.active {
-    top: calc(100% - 12rem);
-  }
