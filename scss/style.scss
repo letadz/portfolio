@@ -13,6 +13,23 @@
 @import './sections/contact';
 @import './sections/footer';
 
+// fonts
+@import url('http://fonts.cdnfonts.com/css/calibre');
+@import url('http://fonts.cdnfonts.com/css/sf-mono');
+
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('./fonts/Calibre/Calibre-Regular.ttf') format('ttf'),
+        url('./fonts/Calibre/Calibre-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SFMono';
+    src: url('./fonts/SFMono/SFMono-Regular.ttf') format('ttf'),
+        url('./fonts/SFMono/SFMono-Regular.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,4 +40,20 @@
 html, body {
     font-family: $font-mono;
     background-color: $light;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: $gray;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: $black;
 }
