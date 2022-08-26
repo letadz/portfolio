@@ -16,11 +16,21 @@
     }
 
     .card-project {
-        max-height: 27rem;
+        max-height: 30rem;
         max-width: 20rem;
         width: 100%;
         padding: 10px;
         border-radius: 10px;
+
+        .skills > span {
+          background-color: $gray;
+          border-radius: 2px;
+          color: $light;
+          display: inline-block;
+          padding: 5px 10px;
+          font-size: 0.75rem;
+        }
+
     }
 
     .uil-github {
@@ -74,6 +84,7 @@
 @media (max-width: 450px) {
   .project-section {
     margin: 0 auto;
+    padding-top: 1rem;
     padding-bottom: 5rem;
     padding-left: 1rem;
     padding-right: 1rem;
