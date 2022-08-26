@@ -11264,6 +11264,7 @@ textarea.form-control-lg {
 @media (max-width: 1024px) {
   .about-section {
     height: 100%;
+    padding-bottom: 5rem;
   }
   .about-section .about-content {
     gap: 3rem;
@@ -11383,7 +11384,7 @@ textarea.form-control-lg {
 
 @media (max-width: 1024px) {
   .project-section {
-    height: auto;
+    height: 100%;
   }
   .project-section .project-list {
     grid-template-columns: repeat(3, 1fr);

@@ -57,7 +57,7 @@
 
 @media (max-width: 1024px) {
   .project-section {
-    height: auto;
+    height: 100%;        
     
     .project-list {
       grid-template-columns: repeat(3, 1fr);
