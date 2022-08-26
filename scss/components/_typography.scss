@@ -48,6 +48,11 @@
     }
 }
 
+@media (max-width: 402px) {
+    .text-middle {
+        line-height: 0.9;
+    }
+}
 
 // About section
 .about-content {

@@ -10832,6 +10832,11 @@ textarea.form-control-lg {
     text-align: center;
   }
 }
+@media (max-width: 402px) {
+  .text-middle {
+    line-height: 0.9;
+  }
+}
 .about-content p {
   color: #737575;
   font-size: 1rem;
@@ -11181,7 +11186,7 @@ textarea.form-control-lg {
     height: 250px;
     width: 250px;
     top: 2rem;
-    right: 1.3rem;
+    right: 1rem;
   }
 }
 @media (max-width: 375px) {
@@ -11189,7 +11194,7 @@ textarea.form-control-lg {
     height: 235px;
     width: 230px;
     top: 1.2rem;
-    right: 1.12rem;
+    right: 1.2rem;
   }
 }
 @media (max-width: 320px) {
@@ -11197,7 +11202,7 @@ textarea.form-control-lg {
     height: 190px;
     width: 190px;
     top: 1.2rem;
-    right: 1.12rem;
+    right: 1.2rem;
   }
 }
 .about-section {
